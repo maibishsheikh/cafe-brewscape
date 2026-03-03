@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "/api" });
+const baseURL = import.meta.env.VITE_API_URL || "/api";
+
+const API = axios.create({ baseURL });
 
 // Attach token to owner requests
 API.interceptors.request.use((config) => {
