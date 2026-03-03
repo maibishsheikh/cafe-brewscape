@@ -1,0 +1,151 @@
+.dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dash-tabs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.dash-tab {
+  padding: 0.65rem 1.5rem;
+  border: 1px solid #e0d5c8;
+  border-radius: 10px;
+  background: #fff;
+  color: #6b5b4e;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dash-tab:hover,
+.dash-tab.active {
+  background: #2c1810;
+  color: #fff;
+  border-color: #2c1810;
+}
+
+.dash-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.dash-card {
+  background: #faf7f2;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.dash-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.dash-card-top h4 {
+  color: #2c1810;
+  font-size: 1.05rem;
+}
+
+.dash-meta {
+  color: #8a7b6e;
+  font-size: 0.82rem;
+  margin-top: 0.15rem;
+}
+
+.status-badge {
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dash-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #6b5b4e;
+  margin-bottom: 0.75rem;
+}
+
+.order-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.order-item-tag {
+  background: #e8dfd4;
+  color: #2c1810;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.cancel-btn {
+  padding: 0.4rem 1rem;
+  background: none;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.status-actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.status-btn {
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #e0d5c8;
+  border-radius: 8px;
+  background: #fff;
+  color: #6b5b4e;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.status-btn:hover:not(:disabled) {
+  background: #2c1810;
+  color: #fff;
+  border-color: #2c1810;
+}
+
+.status-btn.current {
+  background: #2c1810;
+  color: #fff;
+  border-color: #2c1810;
+  cursor: default;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #a09080;
+  padding: 3rem;
+  font-size: 1rem;
+}
